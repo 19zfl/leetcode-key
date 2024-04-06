@@ -1,6 +1,7 @@
 package com.zfl19.leetcode.key.simple;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -35,7 +36,7 @@ public class S26RemovesDuplicates {
         for (int i = 0; i < k; i++) {
             assert nums[i] == expectedNums[i];
         }
-
+        System.out.println(k + ", nums = " + Arrays.toString(expectedNums));
 
     }
 
@@ -47,6 +48,9 @@ public class S26RemovesDuplicates {
             }
         }
         expectedNums = new int[list.size()];
+        for (int i = 0; i < list.size(); i++) {
+            expectedNums[i] = list.get(i);
+        }
         return expectedNums.length;
     }
 
@@ -62,6 +66,7 @@ public class S26RemovesDuplicates {
             }
         }
         return arr;
+
     }
 
     public static int[] typeConversion() {
