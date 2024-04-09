@@ -28,14 +28,11 @@ public class S88MergeTwoOrderedArrays {
                     }
                 }
             }
-            Arrays.sort(nums1);
-        } else if (n == 0) {
-            Arrays.sort(nums1);
         } else {
             for (int i = 0; i < nums2.length; i++) {
                 nums1[i] = nums2[i];
             }
-            Arrays.sort(nums1);
         }
+        Arrays.sort(nums1);
     }
 }
